@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Registrasi</title>
+        <style>
+            body{
+                font-size: 16px;
+                line-height: 28px;
+                background-color: rgb(227, 227, 227);
+            }
+            .container{
+                width: 800px;
+                margin: auto;
+                background-color: rgb(240, 240, 240);
+                padding: 20px;
+            }
+            .header{
+                padding: 20px;
+                background-color: blue;
+                text-align: center;
+            }
+            .container2{
+                background-color: white;
+                margin-top: 20px;
+                padding: 5px;
+            }
+            .text{
+               margin-left: 80px;
+               margin-top: 45px;
+               margin-bottom: 50px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+
+            <div class="header">
+                <h1 class="judul" style="color:white">Form Registrasi</h1>
+            </div>
+
+            <div class="container2">
+                <form action="contact.php" method="POST">
+                <fieldset><b>
+                <p>
+                    <label>Nama &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; :</label>
+                    <input type="text" name="nama" placeholder="Nama lengkap..." />
+                </p>
+                <p>
+                    <label>Tanggal Lahir :</label>
+                    <input type="date" name="tanggal" />
+                </p>
+                <p>
+                    <label>Email &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; :</label>
+                    <input type="email" name="email" placeholder="Your email..." />
+                </p>
+                <p>
+                    <label>Username &nbsp; &nbsp; &nbsp;&nbsp; :</label>
+                    <input type="text" name="username" placeholder="Username..." />
+                </p>
+                <p>
+                    <label>Password &nbsp; &nbsp; &nbsp;&nbsp; :</label>
+                    <input type="password" name="password" placeholder="Passowrd..." />
+                </p>
+                <p>
+                    <label>Jenis kelamin :</label>
+                    <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+                    <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+                </p>
+                <p>
+                    <label>Agama &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :</label>
+                    <select name="agama">
+                        <option value="islam">Islam</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="katolik">Katolik</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="budha">Budha</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Alamat &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :</label>
+                    <textarea name="biografi" placeholder="alamat lengkap..."></textarea>
+                </p>
+                <p>
+                    <label>Minat &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :</label>
+                    <label>
+                        <input type="checkbox" name="minat" value="Otomotif"/>Otomotif
+                    </label>
+                    <label>
+                        <input type="checkbox" name="minat" value="Olahraga"/>Olahraga
+                    </label>
+                    <label>
+                        <input type="checkbox" name="minat" value="Fashion"/>fashion
+                    </label>
+                </p>
+                <p>
+                    <label for="myfile">Upload Foto &nbsp;:</label>
+                    <input type="file" id="myfile" name="myfile">
+                </p>
+                <p>
+                    <input type="submit" name="submit" value="Daftar" />
+                </p>
+                </fieldset></b>
+            </form>
+            </div>
+        </div>
+    </body>
+</html>
