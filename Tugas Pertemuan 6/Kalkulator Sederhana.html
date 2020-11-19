@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>Kalkulator Sederhana</title>
+    <script text="text/javascript">
+          function tambah(){ 
+          a=eval(document.getElementById("a").value);
+          b=eval(document.getElementById("b").value);
+          c=a+b;
+          document.getElementById("hasil").value=c;
+           }
+    </script> 
+    <script text="text/javascript">
+          function kurang(){ 
+          a=document.getElementById("a").value;
+          b=document.getElementById("b").value;
+          c=a-b;
+          document.getElementById("hasil").value=c;
+           }
+    </script>
+    <script text="text/javascript">
+          function kali(){ 
+          a=document.getElementById("a").value;
+          b=document.getElementById("b").value;
+          c=a*b;
+          document.getElementById("hasil").value=c;
+           }
+    </script>
+    <script text="text/javascript">
+          function bagi(){ 
+          a=document.getElementById("a").value;
+          b=document.getElementById("b").value;
+          c=a/b;
+          document.getElementById("hasil").value=c;
+           }
+    </script> 
+ </head>
+<body>
+    <h3 align="center">Kalkulator Sederhana</h3>
+     <form>
+          <table align="center">
+             <tr>
+                 <td>Inputan 1</td>
+                  <td>:</td>
+                  <td><input type="text" id="a" name="a"></td>
+                  <td><input type="button" value="+" onClick="tambah()"></td>
+                  <td><input type="button" value="-" onClick="kurang()"></td>
+             </tr>  
+              <tr>
+                 <td>Inputan 2</td>
+                  <td>:</td>
+                  <td><input type="text" id="b" name="b"></td>
+                  <td><input type="button" value="x" onClick="kali()"></td>
+                  <td><input type="button" value="/" onClick="bagi()"></td>
+             </tr> 
+              <tr>
+                 <td align="center">Hasil</td>
+                  <td>:</td>
+                  <td><input type="text" id="hasil" name="hasil"></td>
+                  <td colspan="2" align="center"><input type="reset" value="Clear"></td>
+             </tr>
+          </table>
+    </form>
+</body>
+</html>
